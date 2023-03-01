@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
 }
 
 .App-logo {
@@ -32,7 +43,49 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  background-color: #ffffff;
+  border: 2px solid #cfcfcf;
+  border-radius: 6px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  border-bottom: 1px solid #cfcfcf
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-top: 12px
+}
+
+.list-item {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.footer-list {
+  margin: 12px 0;
 }

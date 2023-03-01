@@ -82,10 +82,11 @@
 }
 
 .list-item {
-  flex: 1;
-  overflow-y: scroll;
+  height: 196px;
+  overflow: auto;
 }
 
 .footer-list {
   margin: 12px 0;
+  flex: 1;
 }
